@@ -1,0 +1,4 @@
+All Kittens:<p>
+<% @kittens.each do |kitten| %>
+	<%= link_to kitten.name, kitten %> | <%= link_to "Destroy Kitten!", kitten_path(kitten), method: :delete %><p>
+<% end %>

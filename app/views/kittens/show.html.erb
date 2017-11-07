@@ -1,0 +1,6 @@
+<%= @kitten.name %>:<p>
+Age: <%= @kitten.age %><p>
+Cuteness: <%= @kitten.cuteness %><p>
+Softness:	<%= @kitten.softness %><p>
+
+<%= link_to "Edit", edit_kitten_url %> | <%= link_to "Destroy Kitten!", @kitten, method: :delete %>
